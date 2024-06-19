@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         //‰E‚ÖˆÚ“®
-       transform.Translate(Vector2.right * _speed * Time.deltaTime);
+        transform.Translate(Vector2.right * _speed * Time.deltaTime);
 
         //‰æ–ÊŠO‚Éo‚½‚çÁ‚·
         /*if (transform.position.x > 10)
