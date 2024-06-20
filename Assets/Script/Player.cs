@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private GameObject _bullet;
+    [Tooltip("「Bullet」という名前のプレハブをアタッチして下さい")]
+    [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private float _speed = 1f; //移動の速さ
     [SerializeField] private float _jumpPower = 1f; //ジャンプ力
     [SerializeField] private float _gravity = 9.8f; // 重力
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
         //Wが押されたら弾を生成
         if (Input.GetKeyDown(KeyCode.W))
         {
-            Instantiate(_bullet, transform.position, Quaternion.identity);
+            Instantiate(_bulletPrefab, transform.position, Quaternion.identity);
         }
 
         // ジャンプ

@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class EnemyBullet : Bullet
+{
+
+    void Update()
+    {
+        //ç∂Ç÷
+        transform.Translate(Vector2.left * _bulletSpeed * Time.deltaTime);
+
+        //âÊñ äOÇ…èoÇΩÇÁè¡Ç∑
+        if (transform.position.x < -10)
+        {
+            Destroy(gameObject);
+        }
+    }
+}
