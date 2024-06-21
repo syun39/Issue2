@@ -1,12 +1,16 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [Tooltip("「Bullet」という名前のプレハブをアタッチして下さい")]
     [SerializeField] private GameObject _bulletPrefab;
+    [SerializeField] private Vector2 _colliderSize = new Vector2(1, 1);
     [SerializeField] private float _speed = 1f; //移動の速さ
     [SerializeField] private float _jumpPower = 1f; //ジャンプ力
     [SerializeField] private float _gravity = 9.8f; // 重力
+    [SerializeField] public float _width = 1.0f; //幅
+    [SerializeField] public float _height = 1.0f; //高さ
+    [SerializeField] private int _life = 5; //ライフ
 
     private bool _isJumping = false;
     private float _jumpSpeed = 0f; //ジャンプの速さ
@@ -39,11 +43,22 @@ public class Player : MonoBehaviour
 
 
             // 地面に着いたらリセット
-            if (transform.position.y <= -4)
+            if (transform.position.y <= -3.4)
             {
                 _isJumping = false;
                 _jumpSpeed = 0;
             }
         }
+    }
+
+    /// <summary>
+    /// 敵の弾に当たったらライフが減る
+    /// </summary>
+    public void PlayerDamage()
+    {
+        _life--;
+        Debug.Log(_life);
+
+        if (_life == 0) Debug.Log("GAME OVER!");
     }
 }

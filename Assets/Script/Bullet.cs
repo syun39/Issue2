@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] public float _bulletSpeed = 10f; //弾のスピード
+    [SerializeField] float _bulletSpeed = 10f; //弾のスピード
 
     void Update()
     {
