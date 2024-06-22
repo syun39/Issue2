@@ -8,7 +8,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] int _Interval = 1; //発射間隔
     [Tooltip("「Player」をアタッチして下さい")]
     [SerializeField] Transform _player; //プレイヤーの座標
-    
+    [SerializeField] public float _width = 1f; //幅
+    [SerializeField] public float _height = 1f; //高さ
+    [SerializeField] public int _life = 3; //ライフ
 
     private float _currentTime; //経過した秒数
     private bool _isShoot = false; //発射済みかどうか
@@ -38,6 +40,20 @@ public class Enemy : MonoBehaviour
                     _currentTime = 0; //経過した時間を0に戻す
                 }
             }
+        }
+    }
+
+    /// <summary>
+    /// プレイヤーの弾に当たったらライフが減る
+    /// </summary>
+    public void EnemyDamage()
+    {
+        _life--;
+        Debug.Log(_life);
+
+        if (_life == 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -273,7 +273,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -316,6 +316,9 @@ MonoBehaviour:
   _shootDistance: 5
   _Interval: 1
   _player: {fileID: 2067555866}
+  _width: 1
+  _height: 1
+  _life: 3
 --- !u!1 &743680938
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +377,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -417,6 +420,9 @@ MonoBehaviour:
   _shootDistance: 5
   _Interval: 1
   _player: {fileID: 2067555866}
+  _width: 1
+  _height: 1
+  _life: 3
 --- !u!1 &973910923
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +481,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -518,6 +524,9 @@ MonoBehaviour:
   _shootDistance: 5
   _Interval: 1
   _player: {fileID: 2067555866}
+  _width: 1
+  _height: 1
+  _life: 3
 --- !u!1 &1587613696
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,6 +628,9 @@ MonoBehaviour:
   _shootDistance: 5
   _Interval: 1
   _player: {fileID: 2067555866}
+  _width: 1
+  _height: 1
+  _life: 3
 --- !u!1 &1820040980
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +689,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -720,6 +732,9 @@ MonoBehaviour:
   _shootDistance: 5
   _Interval: 1
   _player: {fileID: 2067555866}
+  _width: 1
+  _height: 1
+  _life: 3
 --- !u!1 &1941241681
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,12 +917,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 462622988727772680, guid: a0d22cabdfd2f924b8d3856993773a69, type: 3}
-  _colliderSize: {x: 1, y: 1}
   _speed: 3
   _jumpPower: 12
   _gravity: 9.8
   _width: 1
   _height: 1
+  _life: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

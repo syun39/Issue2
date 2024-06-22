@@ -4,7 +4,6 @@ public class PlayerController : MonoBehaviour
 {
     [Tooltip("「Bullet」という名前のプレハブをアタッチして下さい")]
     [SerializeField] private GameObject _bulletPrefab;
-    [SerializeField] private Vector2 _colliderSize = new Vector2(1, 1);
     [SerializeField] private float _speed = 1f; //移動の速さ
     [SerializeField] private float _jumpPower = 1f; //ジャンプ力
     [SerializeField] private float _gravity = 9.8f; // 重力
