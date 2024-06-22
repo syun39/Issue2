@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         //ˆÚ“®
-        var horizontal = new Vector3(x* _speed * Time.deltaTime,0,0);
+        var horizontal = new Vector3(x * _speed * Time.deltaTime, 0, 0);
         transform.position += horizontal;
 
         //W‚ª‰Ÿ‚³‚ê‚½‚ç’e‚ğ¶¬

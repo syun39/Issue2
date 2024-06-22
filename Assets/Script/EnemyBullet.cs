@@ -42,12 +42,13 @@ public class EnemyBullet : MonoBehaviour
     {
         float playerWidth = player._width;
         float playerHeight = player._height;
+
         //プレイヤーの中心
         Vector2 playerCenter = new(player.transform.position.x, player.transform.position.y);
 
         //x軸の距離がx軸の幅の半分の和よりも小さいか
         //y軸の距離がy軸の高さの半分の和よりも小さいか
-        if (Mathf.Abs(_enemyBulletCenter.x - playerCenter.x) < (_width + playerWidth) / 2 && 
+        if (Mathf.Abs(_enemyBulletCenter.x - playerCenter.x) < (_width + playerWidth) / 2 &&
             Mathf.Abs(_enemyBulletCenter.y - playerCenter.y) < (_height + playerHeight) / 2)
         {
             return true; //衝突
