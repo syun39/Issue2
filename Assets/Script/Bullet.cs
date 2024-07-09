@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
         {
             if (CheckCollision(enemy) == true) //è’ìÀÇµÇΩÇÁ
             {
-                //Debug.Log("Enemy Hit!");
+                //Debug.Log("EnemyAnswer Hit!");
                 enemy.EnemyDamage();
                 Destroy(gameObject);
                 break;
