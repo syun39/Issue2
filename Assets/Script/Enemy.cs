@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
     }
 
     /// <summary>
-    /// プレイヤーの弾に当たったらライフが減る
+    /// 敵にダメージ
     /// </summary>
     public void EnemyDamage()
     {

@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// 敵の弾に当たったらライフが減る
+    /// プレイヤーにダメージ
     /// </summary>
     public void PlayerDamage()
     {
